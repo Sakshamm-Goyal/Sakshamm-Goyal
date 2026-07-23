@@ -1,0 +1,60 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
+  <title id="title">Saksham Goyal</title>
+  <desc id="description">Builder of intelligent systems and polished product experiences.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071225"/>
+      <stop offset="0.47" stop-color="#101F40"/>
+      <stop offset="1" stop-color="#2B1455"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="123" y1="88" x2="1070" y2="266" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="0.5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#F0ABFC"/>
+    </linearGradient>
+    <linearGradient id="orb" x1="984" y1="52" x2="1122" y2="278" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C4B5FD" stop-opacity="0.76"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.06"/>
+    </linearGradient>
+    <filter id="blur" x="734" y="-40" width="540" height="440" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="36"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blurred"/>
+      <feMerge><feMergeNode in="blurred"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="round"><rect width="1200" height="360" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="1200" height="360" fill="url(#background)"/>
+    <g opacity="0.22">
+      <path d="M0 53H1200M0 113H1200M0 173H1200M0 233H1200M0 293H1200" stroke="#94A3B8" stroke-width="0.65"/>
+      <path d="M58 0V360M118 0V360M178 0V360M238 0V360M298 0V360M358 0V360M418 0V360M478 0V360M538 0V360M598 0V360M658 0V360M718 0V360M778 0V360M838 0V360M898 0V360M958 0V360M1018 0V360M1078 0V360M1138 0V360" stroke="#94A3B8" stroke-width="0.65"/>
+    </g>
+    <circle cx="1032" cy="176" r="152" fill="url(#orb)" filter="url(#blur)"/>
+    <path d="M740 261L834 188L918 237L1015 119L1122 165" stroke="url(#accent)" stroke-width="1.25" stroke-opacity="0.65"/>
+    <path d="M740 261L857 303L918 237L1047 273L1122 165" stroke="#7DD3FC" stroke-width="1" stroke-opacity="0.32" stroke-dasharray="4 7"/>
+    <g filter="url(#glow)">
+      <circle cx="740" cy="261" r="5" fill="#7DD3FC"/>
+      <circle cx="834" cy="188" r="5" fill="#A78BFA"/>
+      <circle cx="918" cy="237" r="5" fill="#F0ABFC"/>
+      <circle cx="1015" cy="119" r="6" fill="#7DD3FC"/>
+      <circle cx="1122" cy="165" r="5" fill="#C4B5FD"/>
+      <circle cx="857" cy="303" r="4" fill="#7DD3FC"/>
+      <circle cx="1047" cy="273" r="4" fill="#F0ABFC"/>
+    </g>
+    <g opacity="0.54">
+      <rect x="723" y="68" width="95" height="26" rx="13" fill="#0F2347" stroke="#7DD3FC" stroke-opacity="0.52"/>
+      <text x="770.5" y="85" text-anchor="middle" fill="#CFFAFE" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.8">IDEAS</text>
+      <rect x="1050" y="281" width="95" height="26" rx="13" fill="#261647" stroke="#E9D5FF" stroke-opacity="0.52"/>
+      <text x="1097.5" y="298" text-anchor="middle" fill="#F3E8FF" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.5">IMPACT</text>
+    </g>
+    <rect x="66" y="70" width="74" height="74" rx="18" fill="#0D1B36" stroke="url(#accent)" stroke-width="1.5"/>
+    <path d="M111.1 88.5C105.1 82.9 93.1 85.4 93.1 94.2C93.1 103.7 114.5 99.2 114.5 110.5C114.5 121.5 99.2 123.9 91.4 116.5" stroke="url(#accent)" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M103.1 78.5V126.5" stroke="#E0F2FE" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round"/>
+    <text x="66" y="190" fill="#7DD3FC" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="3.6">HELLO, I AM</text>
+    <text x="66" y="247" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="-1.6">Saksham Goyal</text>
+    <rect x="66" y="270" width="516" height="2" rx="1" fill="url(#accent)"/>
+    <text x="66" y="307" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="0.2">Designing intelligent systems &amp; polished product experiences.</text>
+  </g>
+</svg>
