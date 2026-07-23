@@ -25,6 +25,34 @@ I care about the full arc: a clear problem, an elegant interface, reliable engin
   <code>developer-first UX</code>
 </p>
 
+## Flagship build — Elara
+
+<p align="center">
+  <img src="./assets/elara-system.svg" width="100%" alt="Elara turns a person's wardrobe, context, and taste into a confident style decision" />
+</p>
+
+> **Elara is a personal style intelligence system.** It starts with what someone already owns, understands the moment they are dressing for, and turns that context into a confident next look — not an endless scroll of options.
+
+<p align="center"><sub>Click a layer to look inside the product thinking.</sub></p>
+
+<details>
+  <summary><strong>01 / Start with the wardrobe</strong> — make owned pieces useful again</summary>
+  <br />
+  Elara treats a wardrobe as personal context, not a product catalogue. The goal is to surface combinations that feel wearable, specific, and true to the person — before suggesting something new.
+</details>
+
+<details>
+  <summary><strong>02 / Meet the moment</strong> — closet, hybrid, or shopping</summary>
+  <br />
+  A good recommendation changes with the occasion, weather, budget, culture, and personal taste. Elara can work from the closet, blend owned pieces with a few purposeful additions, or guide a new purchase when that is genuinely the right move.
+</details>
+
+<details>
+  <summary><strong>03 / Give a decision, not a menu</strong> — creative taste with engineering discipline</summary>
+  <br />
+  The experience is designed to feel like advice from a stylist with context: distinct outfit directions, clear reasoning, and practical details that help someone act. Underneath, deterministic checks protect the parts software should never guess.
+</details>
+
 ## Selected work
 
 <table>
