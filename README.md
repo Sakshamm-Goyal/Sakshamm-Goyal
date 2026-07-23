@@ -25,6 +25,10 @@ I care about the full arc: a clear problem, an elegant interface, reliable engin
   <code>developer-first UX</code>
 </p>
 
+<p align="center">
+  <img src="./assets/impact.svg" width="100%" alt="Proof of work: GitHub contribution and public repository metrics, refreshed daily" />
+</p>
+
 ## Flagship build — Elara
 
 <p align="center">
