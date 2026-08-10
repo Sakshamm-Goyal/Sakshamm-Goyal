@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 import { queryGitHubGraphQL } from "./github-graphql.mjs";
@@ -52,4 +53,14 @@ test("does not retry a deterministic GitHub GraphQL error", async () => {
   );
 
   assert.equal(calls, 1);
+});
+
+test("profile metrics target Sakshamm-Goyal rather than the workflow bot viewer", async () => {
+  const script = await readFile(new URL("./generate-impact-metric.mjs", import.meta.url), "utf8");
+
+  assert.match(script, /const profileLogin = "Sakshamm-Goyal"/);
+  assert.match(script, /user\(login: \$login\)/);
+  assert.match(script, /variables: \{ login: profileLogin,/);
+  assert.match(script, /data\.user\.contributionsCollection/);
+  assert.doesNotMatch(script, /viewer\s*\{\s*repositories/);
 });
