@@ -1,10 +1,7 @@
 import { writeFile } from "node:fs/promises";
+import { queryGitHubGraphQL } from "./github-graphql.mjs";
 
 const token = process.env.GITHUB_TOKEN;
-
-if (!token) {
-  throw new Error("GITHUB_TOKEN is required to refresh profile metrics.");
-}
 
 const to = new Date();
 const from = new Date(to);
@@ -19,28 +16,14 @@ const query = `query($from: DateTime!, $to: DateTime!) {
   }
 }`;
 
-const response = await fetch("https://api.github.com/graphql", {
-  method: "POST",
-  headers: {
-    Authorization: `bearer ${token}`,
-    "Content-Type": "application/json",
-    "User-Agent": "sakshamm-goyal-profile-metrics",
-  },
-  body: JSON.stringify({ query, variables: { from: from.toISOString(), to: to.toISOString() } }),
+const data = await queryGitHubGraphQL({
+  token,
+  query,
+  variables: { from: from.toISOString(), to: to.toISOString() },
 });
 
-if (!response.ok) {
-  throw new Error(`GitHub GraphQL request failed: ${response.status} ${response.statusText}`);
-}
-
-const payload = await response.json();
-
-if (payload.errors?.length) {
-  throw new Error(payload.errors.map(({ message }) => message).join("; "));
-}
-
-const contributions = payload.data.viewer.contributionsCollection.contributionCalendar.totalContributions;
-const repositories = payload.data.viewer.repositories.totalCount;
+const contributions = data.viewer.contributionsCollection.contributionCalendar.totalContributions;
+const repositories = data.viewer.repositories.totalCount;
 const formatter = new Intl.NumberFormat("en-US");
 const updated = new Intl.DateTimeFormat("en-GB", {
   day: "2-digit",
