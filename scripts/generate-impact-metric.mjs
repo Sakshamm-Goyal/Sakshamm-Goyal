@@ -2,13 +2,14 @@ import { writeFile } from "node:fs/promises";
 import { queryGitHubGraphQL } from "./github-graphql.mjs";
 
 const token = process.env.GITHUB_TOKEN;
+const profileLogin = "Sakshamm-Goyal";
 
 const to = new Date();
 const from = new Date(to);
 from.setUTCFullYear(from.getUTCFullYear() - 1);
 
-const query = `query($from: DateTime!, $to: DateTime!) {
-  viewer {
+const query = `query($login: String!, $from: DateTime!, $to: DateTime!) {
+  user(login: $login) {
     repositories(first: 1, privacy: PUBLIC) { totalCount }
     contributionsCollection(from: $from, to: $to) {
       contributionCalendar { totalContributions }
@@ -19,11 +20,11 @@ const query = `query($from: DateTime!, $to: DateTime!) {
 const data = await queryGitHubGraphQL({
   token,
   query,
-  variables: { from: from.toISOString(), to: to.toISOString() },
+  variables: { login: profileLogin, from: from.toISOString(), to: to.toISOString() },
 });
 
-const contributions = data.viewer.contributionsCollection.contributionCalendar.totalContributions;
-const repositories = data.viewer.repositories.totalCount;
+const contributions = data.user.contributionsCollection.contributionCalendar.totalContributions;
+const repositories = data.user.repositories.totalCount;
 const formatter = new Intl.NumberFormat("en-US");
 const updated = new Intl.DateTimeFormat("en-GB", {
   day: "2-digit",
