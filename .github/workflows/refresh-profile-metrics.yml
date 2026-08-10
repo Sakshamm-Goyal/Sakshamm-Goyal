@@ -12,7 +12,9 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
+      - name: Verify GraphQL retry behavior
+        run: node --test scripts/github-graphql.test.mjs
       - name: Generate current metrics
         env:
           GITHUB_TOKEN: ${{ github.token }}
