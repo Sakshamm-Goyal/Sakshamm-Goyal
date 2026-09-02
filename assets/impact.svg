@@ -21,6 +21,6 @@
     <path d="M786 124L869 79L954 123L1047 58L1144 108" stroke="url(#accent)" stroke-width="1.5" stroke-dasharray="6 7"><animate attributeName="stroke-dashoffset" values="0;-52" dur="3.2s" repeatCount="indefinite"/></path>
     <path d="M786 124L883 148L954 123L1064 144L1144 108" stroke="#67E8F9" stroke-opacity="0.4" stroke-dasharray="3 7"/>
     <g filter="url(#glow)"><circle cx="786" cy="124" r="4" fill="#67E8F9"/><circle cx="869" cy="79" r="5" fill="#A78BFA"/><circle cx="954" cy="123" r="5" fill="#F9A8D4"/><circle cx="1047" cy="58" r="5" fill="#67E8F9"/><circle cx="1144" cy="108" r="5" fill="#C4B5FD"/><circle cx="883" cy="148" r="3.5" fill="#67E8F9"/><circle cx="1064" cy="144" r="3.5" fill="#F9A8D4"/></g>
-    <text x="965" y="174" text-anchor="middle" fill="#E2E8F0" fill-opacity="0.78" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.6">REFRESHES DAILY · 01 SEPT 2026</text>
+    <text x="965" y="174" text-anchor="middle" fill="#E2E8F0" fill-opacity="0.78" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.6">REFRESHES DAILY · 02 SEPT 2026</text>
   </g>
 </svg>
